@@ -1,0 +1,14 @@
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\bin\Debug\TelaTesteApi.exe.config
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\bin\Debug\TelaTesteApi.exe
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\bin\Debug\TelaTesteApi.pdb
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\bin\Debug\Newtonsoft.Json.dll
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\bin\Debug\Newtonsoft.Json.xml
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\obj\Debug\TelaTesteApi.csprojAssemblyReference.cache
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\obj\Debug\TelaTesteApi.Form1.resources
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\obj\Debug\TelaTesteApi.Properties.Resources.resources
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\obj\Debug\TelaTesteApi.csproj.GenerateResource.cache
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\obj\Debug\TelaTesteApi.csproj.CopyComplete
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\obj\Debug\TelaTesteApi.exe
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\obj\Debug\TelaTesteApi.pdb
