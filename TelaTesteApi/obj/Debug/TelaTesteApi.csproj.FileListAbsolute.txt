@@ -12,3 +12,4 @@ C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\obj\Debug\TelaTesteApi.cs
 C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\obj\Debug\TelaTesteApi.csproj.CopyComplete
 C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\obj\Debug\TelaTesteApi.exe
 C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\obj\Debug\TelaTesteApi.pdb
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\obj\Debug\TelaTesteApi.Form2.resources

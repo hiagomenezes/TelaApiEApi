@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hiago\\Desktop\\hiago\\telaAPI\\telaAPI\\telaAPI.csproj",
+      "projectUniqueName": "C:\\Users\\hiago\\Desktop\\hiago\\TelaTesteApi\\telaAPI\\telaAPI\\telaAPI.csproj",
       "projectName": "telaAPI",
-      "projectPath": "C:\\Users\\hiago\\Desktop\\hiago\\telaAPI\\telaAPI\\telaAPI.csproj",
+      "projectPath": "C:\\Users\\hiago\\Desktop\\hiago\\TelaTesteApi\\telaAPI\\telaAPI\\telaAPI.csproj",
       "packagesPath": "C:\\Users\\hiago\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hiago\\Desktop\\hiago\\telaAPI\\telaAPI\\obj\\",
+      "outputPath": "C:\\Users\\hiago\\Desktop\\hiago\\TelaTesteApi\\telaAPI\\telaAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hiago\\AppData\\Roaming\\NuGet\\NuGet.Config",

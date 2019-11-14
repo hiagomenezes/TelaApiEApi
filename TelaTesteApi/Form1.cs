@@ -16,9 +16,11 @@ namespace TelaTesteApi
 {
     public partial class Form1 : Form
     {
+        
         public Form1()
         {
             InitializeComponent();
+            Refresh();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -53,8 +55,8 @@ namespace TelaTesteApi
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            List<Pessoas> pessoas = new List<Pessoas>();
 
+            List<Pessoas> pessoas = new List<Pessoas>();
             HttpClient client = new HttpClient();
             // caminho local da api 
             client.BaseAddress = new Uri("https://localhost:44393/weatherforecast");
@@ -74,6 +76,7 @@ namespace TelaTesteApi
 
             // função para não permiter que coloque a ultima linha
             dataGridView1.AllowUserToAddRows = false;
+
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -145,9 +148,39 @@ namespace TelaTesteApi
                     }
                 }
                 MeuCaminho.Close();
-                /*DialogResult result = */ MessageBox.Show("Salvo com sucesso!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                /*DialogResult result = */
+                MessageBox.Show("Salvo com sucesso!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (checkBox1.Checked == true)
+                {
+                    int RowIndexCheck = dataGridView1.CurrentCell.RowIndex;
+
+                    String cidade = dataGridView1.Rows[RowIndexCheck].Cells["cidade"].Value.ToString();
+                    String Nome = dataGridView1.Rows[RowIndexCheck].Cells["nome"].Value.ToString();
+
+                    Pessoas registro = new Pessoas();
+                    registro.cidade = cidade;
+                    registro.nome = Nome;
+
+
+                    Form1 form1 = new Form1();
+                    form1.Hide();
+                    Form2 form2 = new Form2();
+                    form2.Show();
+
+
+                }
+
+
 
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            this.Hide();
+            Form2 form2 = new Form2();
+            form2.Show();
         }
     }
 }
