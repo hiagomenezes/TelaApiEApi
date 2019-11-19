@@ -15,9 +15,9 @@ namespace TelaTesteApi
         List<Pessoas> listadepessoas = new List<Pessoas>();
         public Form2()
         {
-           
+
             InitializeComponent();
-            //listadepessoas.Add();
+            //  listadepessoas.Add();
         }
         //public string propriedade { get; set; }
 
@@ -25,7 +25,10 @@ namespace TelaTesteApi
         {
 
 
+
             dataGridView1.DataSource = listadepessoas;
+
+            dataGridView1.AllowUserToAddRows = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -34,5 +37,7 @@ namespace TelaTesteApi
             Form1 form1 = new Form1();
             form1.Show();
         }
+
+
     }
 }

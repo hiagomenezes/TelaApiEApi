@@ -16,7 +16,7 @@ namespace TelaTesteApi
 {
     public partial class Form1 : Form
     {
-        
+
         public Form1()
         {
             InitializeComponent();
@@ -48,7 +48,6 @@ namespace TelaTesteApi
                 {
                     button1.Enabled = false;
                 }
-
 
             }
         }
@@ -150,29 +149,10 @@ namespace TelaTesteApi
                 MeuCaminho.Close();
                 /*DialogResult result = */
                 MessageBox.Show("Salvo com sucesso!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                if (checkBox1.Checked == true)
-                {
-                    int RowIndexCheck = dataGridView1.CurrentCell.RowIndex;
-
-                    String cidade = dataGridView1.Rows[RowIndexCheck].Cells["cidade"].Value.ToString();
-                    String Nome = dataGridView1.Rows[RowIndexCheck].Cells["nome"].Value.ToString();
-
-                    Pessoas registro = new Pessoas();
-                    registro.cidade = cidade;
-                    registro.nome = Nome;
-
-
-                    Form1 form1 = new Form1();
-                    form1.Hide();
-                    Form2 form2 = new Form2();
-                    form2.Show();
-
-
-                }
-
-
-
+                // esta função vai chamar o evento no botão 2
+                button2.PerformClick();
             }
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -180,7 +160,30 @@ namespace TelaTesteApi
 
             this.Hide();
             Form2 form2 = new Form2();
+            form2.dataGridView1.Refresh();
             form2.Show();
+
+            DataTable dt = new DataTable();
+            dt.Columns.Add("nome");
+            dt.Columns.Add("idade");
+            dt.Columns.Add("cpf");
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                bool isSelected = Convert.ToBoolean(row.Cells[0].Value);
+                if (isSelected)
+                {
+                    dt.Rows.Add(row.Cells[1].Value, row.Cells[2].Value, row.Cells[3].Value);
+                }
+            }
+            form2.dataGridView1.DataSource = dt;
+
+            for (int i = dataGridView1.Rows.Count - 1; i >= 0; i--)
+            {
+                if (Convert.ToBoolean(dataGridView1.Rows[i].Cells[0].Value) == true)
+                {
+                    dataGridView1.Rows.RemoveAt(i);
+                }
+            }
         }
     }
 }
