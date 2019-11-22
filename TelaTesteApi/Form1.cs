@@ -81,6 +81,7 @@ namespace TelaTesteApi
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
+            // botão para selecionar 50 linhas de uma vez
             for (int i = 0; i < 50 && (i <= dataGridView1.Rows.Count - 1); i++)
             {
                 dataGridView1.Rows[i].Cells[0].Value = (sender as CheckBox).Checked;
@@ -158,9 +159,9 @@ namespace TelaTesteApi
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            
             Form2 form2 = new Form2(); ;
- 
+            // vai adicionar o valor que estiver selecionado no checkedbox no datagridview 2
             var ps = new List<Pessoas>();
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
@@ -173,9 +174,8 @@ namespace TelaTesteApi
             form2.dataGridView2.DataSource = ps;
             form2.dataGridView2.Refresh();
 
-
+            //  excluir o valor que estiver selecionado do datagridview 1
             List<Pessoas> pessoas1 = new List<Pessoas>();
-
             pessoas1 = (List<Pessoas>)dataGridView1.DataSource;
              
             foreach (Pessoas item in ps)
@@ -185,7 +185,6 @@ namespace TelaTesteApi
           
             }
             dataGridView1.DataSource = pessoas1;
-
             form2.Show();
             this.Hide();
 
