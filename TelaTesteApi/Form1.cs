@@ -14,9 +14,11 @@ using System.IO;
 
 namespace TelaTesteApi
 {
+    
     public partial class Form1 : Form
     {
-
+        //DataTable dt1 = new DataTable("datagridview1");
+        //DataTable dt2 = new DataTable("datagridview2");
         public Form1()
         {
             InitializeComponent();
@@ -54,8 +56,8 @@ namespace TelaTesteApi
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
             List<Pessoas> pessoas = new List<Pessoas>();
+
             HttpClient client = new HttpClient();
             // caminho local da api 
             client.BaseAddress = new Uri("https://localhost:44393/weatherforecast");
@@ -69,7 +71,6 @@ namespace TelaTesteApi
             // var response =  client.PostAsJsonAsync("weatherforecast", pessoas).Result.Content.ReadAsAsync<IEnumerable<Pessoas>>().Result;
 
             dataGridView1.DataSource = pessoas;
-
 
             // dataGridView1.ReadOnly = true;
 
@@ -158,33 +159,38 @@ namespace TelaTesteApi
         private void button2_Click(object sender, EventArgs e)
         {
 
-            this.Hide();
-            Form2 form2 = new Form2();
-            form2.dataGridView1.Refresh();
-            form2.Show();
-
-            DataTable dt = new DataTable();
-            dt.Columns.Add("nome");
-            dt.Columns.Add("idade");
-            dt.Columns.Add("cpf");
+            Form2 form2 = new Form2(); ;
+ 
+            var ps = new List<Pessoas>();
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
-                bool isSelected = Convert.ToBoolean(row.Cells[0].Value);
-                if (isSelected)
+                Pessoas i = row.DataBoundItem as Pessoas;
+                if (Convert.ToBoolean(row.Cells[0].Value) == true)
                 {
-                    dt.Rows.Add(row.Cells[1].Value, row.Cells[2].Value, row.Cells[3].Value);
+                    ps.Add(i);
                 }
             }
-            form2.dataGridView1.DataSource = dt;
+            form2.dataGridView2.DataSource = ps;
+            form2.dataGridView2.Refresh();
 
-            for (int i = dataGridView1.Rows.Count - 1; i >= 0; i--)
+
+            List<Pessoas> pessoas1 = new List<Pessoas>();
+
+            pessoas1 = (List<Pessoas>)dataGridView1.DataSource;
+             
+            foreach (Pessoas item in ps)
             {
-                if (Convert.ToBoolean(dataGridView1.Rows[i].Cells[0].Value) == true)
-                {
-                    dataGridView1.Rows.RemoveAt(i);
-                }
+                //Pessoas pe = item.DataBoundItem as Pessoas;
+                pessoas1.Remove(item);
+          
             }
+            dataGridView1.DataSource = pessoas1;
+
+            form2.Show();
+            this.Hide();
+
         }
+
     }
 }
 
