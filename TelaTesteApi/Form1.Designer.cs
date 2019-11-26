@@ -30,9 +30,9 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,15 +58,6 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // Column1
-            // 
-            this.Column1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.Column1.Frozen = true;
-            this.Column1.HeaderText = "Selecionar";
-            this.Column1.Name = "Column1";
-            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column1.Width = 63;
-            // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
@@ -87,6 +78,16 @@
             this.button2.Text = "Exibir forms 2";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // Column1
+            // 
+            this.Column1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.Column1.Frozen = true;
+            this.Column1.HeaderText = "Selecionar";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column1.Width = 63;
             // 
             // Form1
             // 
@@ -109,9 +110,9 @@
         #endregion
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Column1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Column1;
     }
 }
 

@@ -14,7 +14,7 @@ using System.IO;
 
 namespace TelaTesteApi
 {
-    
+
     public partial class Form1 : Form
     {
         //DataTable dt1 = new DataTable("datagridview1");
@@ -27,6 +27,15 @@ namespace TelaTesteApi
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            foreach (DataGridViewColumn column in dataGridView1.Columns)
+                if (column.Index == 0)
+                {
+                    column.ReadOnly = false;
+                }
+                else
+                {
+                    column.ReadOnly = true;
+                }
 
             // função para verificar se tem pelomenos em check com o valor true para ativar o botão para gerar o lote
             if (e.ColumnIndex == 0 && e.RowIndex > -1)
@@ -56,26 +65,42 @@ namespace TelaTesteApi
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            List<Pessoas> pessoas = new List<Pessoas>();
 
-            HttpClient client = new HttpClient();
-            // caminho local da api 
-            client.BaseAddress = new Uri("https://localhost:44393/weatherforecast");
-            // receber as informações da api em formato json
-            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            // o metodo GetAsync vai fazer a solicitação do get e o metodo ReadAsStringAsync vai deserializar o json
-            var formata = client.GetAsync("weatherforecast").Result.Content.ReadAsAsync<IEnumerable<Pessoas>>().Result;
+            try
+            {
+                List<Pessoas> pessoas = new List<Pessoas>();
 
-            pessoas.AddRange(formata);
+                HttpClient client = new HttpClient();
+                // caminho local da api 
+                client.BaseAddress = new Uri("https://localhost:44393/weatherforecast");
+                // receber as informações da api em formato json
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                // o metodo GetAsync vai fazer a solicitação do get e o metodo ReadAsStringAsync vai deserializar o json
+                var formata = client.GetAsync("weatherforecast").Result.Content.ReadAsAsync<IEnumerable<Pessoas>>().Result;
 
-            // var response =  client.PostAsJsonAsync("weatherforecast", pessoas).Result.Content.ReadAsAsync<IEnumerable<Pessoas>>().Result;
+                pessoas.AddRange(formata);
 
-            dataGridView1.DataSource = pessoas;
+                // var response =  client.PostAsJsonAsync("weatherforecast", pessoas).Result.Content.ReadAsAsync<IEnumerable<Pessoas>>().Result;
 
-            // dataGridView1.ReadOnly = true;
+                dataGridView1.DataSource = pessoas;
 
-            // função para não permiter que coloque a ultima linha
-            dataGridView1.AllowUserToAddRows = false;
+                // dataGridView1.ReadOnly = true;
+
+
+
+
+
+                // função para não permiter que coloque a ultima linha
+                dataGridView1.AllowUserToAddRows = false;
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("A SUA API NÃO ESTA FUNCIONANDO", "INFORMAÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Close();
+            }
+
+
 
         }
 
@@ -159,7 +184,7 @@ namespace TelaTesteApi
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+
             Form2 form2 = new Form2(); ;
             // vai adicionar o valor que estiver selecionado no checkedbox no datagridview 2
             var ps = new List<Pessoas>();
@@ -177,12 +202,12 @@ namespace TelaTesteApi
             //  excluir o valor que estiver selecionado do datagridview 1
             List<Pessoas> pessoas1 = new List<Pessoas>();
             pessoas1 = (List<Pessoas>)dataGridView1.DataSource;
-             
+
             foreach (Pessoas item in ps)
             {
                 //Pessoas pe = item.DataBoundItem as Pessoas;
                 pessoas1.Remove(item);
-          
+
             }
             dataGridView1.DataSource = pessoas1;
             form2.Show();

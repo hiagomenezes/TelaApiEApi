@@ -16,3 +16,21 @@ C:\Users\hiago\Desktop\hiago\telaAPI\telaAPI\bin\Debug\netcoreapp3.0\telaAPI.pdb
 C:\Users\hiago\Desktop\hiago\telaAPI\telaAPI\obj\Debug\netcoreapp3.0\telaAPI.RazorTargetAssemblyInfo.cache
 C:\Users\hiago\Desktop\hiago\telaAPI\telaAPI\obj\Debug\netcoreapp3.0\telaAPI.dll
 C:\Users\hiago\Desktop\hiago\telaAPI\telaAPI\obj\Debug\netcoreapp3.0\telaAPI.pdb
+C:\Users\Hiago Roberto\Desktop\Projetos\TelaApiEApi\telaAPI\telaAPI\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\Hiago Roberto\Desktop\Projetos\TelaApiEApi\telaAPI\telaAPI\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\Hiago Roberto\Desktop\Projetos\TelaApiEApi\telaAPI\telaAPI\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\Hiago Roberto\Desktop\Projetos\TelaApiEApi\telaAPI\telaAPI\bin\Debug\netcoreapp3.0\telaAPI.exe
+C:\Users\Hiago Roberto\Desktop\Projetos\TelaApiEApi\telaAPI\telaAPI\bin\Debug\netcoreapp3.0\telaAPI.deps.json
+C:\Users\Hiago Roberto\Desktop\Projetos\TelaApiEApi\telaAPI\telaAPI\bin\Debug\netcoreapp3.0\telaAPI.runtimeconfig.json
+C:\Users\Hiago Roberto\Desktop\Projetos\TelaApiEApi\telaAPI\telaAPI\bin\Debug\netcoreapp3.0\telaAPI.runtimeconfig.dev.json
+C:\Users\Hiago Roberto\Desktop\Projetos\TelaApiEApi\telaAPI\telaAPI\bin\Debug\netcoreapp3.0\telaAPI.dll
+C:\Users\Hiago Roberto\Desktop\Projetos\TelaApiEApi\telaAPI\telaAPI\bin\Debug\netcoreapp3.0\telaAPI.pdb
+C:\Users\Hiago Roberto\Desktop\Projetos\TelaApiEApi\telaAPI\telaAPI\obj\Debug\netcoreapp3.0\telaAPI.csprojAssemblyReference.cache
+C:\Users\Hiago Roberto\Desktop\Projetos\TelaApiEApi\telaAPI\telaAPI\obj\Debug\netcoreapp3.0\staticwebassets\telaAPI.StaticWebAssets.Manifest.cache
+C:\Users\Hiago Roberto\Desktop\Projetos\TelaApiEApi\telaAPI\telaAPI\obj\Debug\netcoreapp3.0\staticwebassets\telaAPI.StaticWebAssets.xml
+C:\Users\Hiago Roberto\Desktop\Projetos\TelaApiEApi\telaAPI\telaAPI\obj\Debug\netcoreapp3.0\telaAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Hiago Roberto\Desktop\Projetos\TelaApiEApi\telaAPI\telaAPI\obj\Debug\netcoreapp3.0\telaAPI.AssemblyInfoInputs.cache
+C:\Users\Hiago Roberto\Desktop\Projetos\TelaApiEApi\telaAPI\telaAPI\obj\Debug\netcoreapp3.0\telaAPI.AssemblyInfo.cs
+C:\Users\Hiago Roberto\Desktop\Projetos\TelaApiEApi\telaAPI\telaAPI\obj\Debug\netcoreapp3.0\telaAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Hiago Roberto\Desktop\Projetos\TelaApiEApi\telaAPI\telaAPI\obj\Debug\netcoreapp3.0\telaAPI.dll
+C:\Users\Hiago Roberto\Desktop\Projetos\TelaApiEApi\telaAPI\telaAPI\obj\Debug\netcoreapp3.0\telaAPI.pdb
