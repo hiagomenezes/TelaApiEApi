@@ -28,3 +28,16 @@ C:\Users\Hiago Roberto\Desktop\Projetos\TelaApiEApi\TelaTesteApi\obj\Debug\TelaT
 C:\Users\Hiago Roberto\Desktop\Projetos\TelaApiEApi\TelaTesteApi\obj\Debug\TelaTesteApi.csproj.CopyComplete
 C:\Users\Hiago Roberto\Desktop\Projetos\TelaApiEApi\TelaTesteApi\obj\Debug\TelaTesteApi.exe
 C:\Users\Hiago Roberto\Desktop\Projetos\TelaApiEApi\TelaTesteApi\obj\Debug\TelaTesteApi.pdb
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\bin\Debug\RestSharp.dll
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\bin\Debug\RestSharp.xml
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\bin\Debug\TelaTesteApi.exe.manifest
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\bin\Debug\TelaTesteApi.application
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\obj\Debug\TelaTesteApi.exe.manifest
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\obj\Debug\TelaTesteApi.application
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\bin\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\hiago\Desktop\hiago\TelaTesteApi\TelaTesteApi\obj\Debug\TelaTesteApi.exe.config

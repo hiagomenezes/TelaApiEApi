@@ -12,11 +12,12 @@ namespace TelaTesteApi
         {
         }
 
-        public Pessoas(string nome, int idade, string cpf, string rg,
+        public Pessoas(int id, string nome, int idade, string cpf, string rg,
             string data_nasc, string signo, string mae, string pai, string email, string senha, 
             string cep, string endereco, int numero, string bairro, string cidade, string estado, string telefone_fixo, 
             string celular, string altura, int peso, string tipo_sanguineo, string cor)
         {
+            this.id = id;
             this.nome = nome;
             this.idade = idade;
             this.cpf = cpf;
@@ -31,7 +32,7 @@ namespace TelaTesteApi
             this.endereco = endereco;
             this.numero = numero;
             this.bairro = bairro;
-            this.cidade = cidade;
+            this.cidade = cidade; 
             this.estado = estado;
             this.telefone_fixo = telefone_fixo;
             this.celular = celular;
@@ -41,6 +42,7 @@ namespace TelaTesteApi
             this.cor = cor;
         }
 
+        public int id { get; set; }
         public string nome { get; set; }
         public int idade { get; set; }
         public string cpf { get; set; }

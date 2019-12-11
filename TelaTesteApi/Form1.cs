@@ -11,14 +11,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using System.IO;
+using RestSharp;
+using System.Configuration;
+using Microsoft.IdentityModel.Protocols;
+using System.Net;
+using System.Security.Policy;
 
 namespace TelaTesteApi
 {
 
     public partial class Form1 : Form
     {
-        //DataTable dt1 = new DataTable("datagridview1");
-        //DataTable dt2 = new DataTable("datagridview2");
+
         public Form1()
         {
             InitializeComponent();
@@ -62,45 +66,34 @@ namespace TelaTesteApi
 
             }
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
-
             try
             {
                 List<Pessoas> pessoas = new List<Pessoas>();
 
+                var appSettings = ConfigurationManager.AppSettings;
+                string result = appSettings["API"] ?? "Not Found";
                 HttpClient client = new HttpClient();
-                // caminho local da api 
-                client.BaseAddress = new Uri("https://localhost:44393/weatherforecast");
-                // receber as informações da api em formato json
+                //caminho local da api
+                client.BaseAddress = new Uri(result);
+                //receber as informações da api em formato json
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                // o metodo GetAsync vai fazer a solicitação do get e o metodo ReadAsStringAsync vai deserializar o json
+                // o metodo getasync vai fazer a solicitação do get e o metodo readasstringasync vai deserializar o json
                 var formata = client.GetAsync("weatherforecast").Result.Content.ReadAsAsync<IEnumerable<Pessoas>>().Result;
-
                 pessoas.AddRange(formata);
-
-                // var response =  client.PostAsJsonAsync("weatherforecast", pessoas).Result.Content.ReadAsAsync<IEnumerable<Pessoas>>().Result;
 
                 dataGridView1.DataSource = pessoas;
 
-                // dataGridView1.ReadOnly = true;
-
-
-
-
-
                 // função para não permiter que coloque a ultima linha
                 dataGridView1.AllowUserToAddRows = false;
-
             }
             catch (Exception)
             {
                 MessageBox.Show("A SUA API NÃO ESTA FUNCIONANDO", "INFORMAÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Close();
+
             }
-
-
 
         }
 

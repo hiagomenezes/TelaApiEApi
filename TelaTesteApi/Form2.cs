@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace TelaTesteApi
 {
@@ -22,7 +23,7 @@ namespace TelaTesteApi
 
         private void Form2_Load(object sender, EventArgs e)
         {
-          
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,6 +34,9 @@ namespace TelaTesteApi
             form1.Show();
         }
 
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
     }
 }
